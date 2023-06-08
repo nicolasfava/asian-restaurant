@@ -1,2 +1,2 @@
 # asian-restaurant
-a web page for a restaurant
+full responsive web-page for an ipotetical restaurant
