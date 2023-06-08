@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Poppins:wght@200;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-texture {
+    background-image: url('./assets/bg_texture.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.filterColors {
+    filter: invert(1);
+}
+
+.rotated {
+    transform: rotate(-45deg);
+}
+
+.gallery {
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.icon {
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    opacity: 0.5;
+    transition: .5s ease;
+    cursor: pointer;
+    top: 45%;
+    left: 45%;
+}
+
+.image {
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.card:hover img {
+    opacity: 0.35;
+}
+
+.card:hover:hover .icon {
+    opacity: 1;
+}
+
+.arrowIcon {
+    color: #FFBC58;
+}
+
+.arrowIcon:hover {
+    color: #fff;
+}
+
